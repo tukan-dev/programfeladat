@@ -11,7 +11,9 @@ def feladatos():
         v = int(input("/: "))
 
         if v == 1:
-            feladat = input("Add meg a feladatot: ")
+            targy = input("Add meg a megrendelést: ")
+            allapot = input("Add meg a rendelés állapotát: ")
+            feladat = targy + " - " + allapot
             feladatok.append(feladat)
             print(f"'{feladat}' hozzáadva a listához")
         elif v == 2:
